@@ -1,0 +1,28 @@
+<h1 class="idxTitle">MTG Finder</h1>
+<p class="idxTitleP">All you need is MTG!</p>
+
+<div class="container">
+
+  <div id="cardShop" class="row">
+
+    {{#each cards}}
+
+    <div id="cardCol" class="col-md-2">
+
+      <div class="card">
+
+        <a href="cardDetail/{{id}}"> <img class="card-img-top" src="{{image_uris.large}}" alt="{{name}}"></a>
+        <div class="card-body">
+          <h5 class="card-name">{{name}}</h5>
+          <p class="card-text"> <strong> Standard:</strong> {{legalities.standard}}</p>
+          <p class="card-text"><strong> Legacy:</strong> {{legalities.legacy}}</p>
+          <p class="card-price"><strong></strong> {{prices.eur}} <strong> €</strong></p>
+        </div>
+      </div>
+
+    </div>
+    {{/each}}
+
+  </div>
+
+</div>

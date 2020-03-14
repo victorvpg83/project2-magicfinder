@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h5 class="idxTitle">Market corner</h5>
+  <p class="idxTitleP">Here you can find all the card on the market</p>
+
+  {{#each users}}
+
+  {{#if cardonsale.length}}
+  <div class="row ">
+    <div class="col-md-2 borderB">
+      <p><b>Collection Owner:</b></p>
+      <h4>{{this.username}}</h4>
+
+      <a href="{{this.email}}" target="_blank" class="btn btn-primary btn-sm">contact</a>
+      <br>
+    </div>
+    {{#each cardonsale}}
+
+    <div class="col-md-2 borderB">
+      <div class="card-image-details">
+        <img class="imdD" src="{{cardImage}}" alt="{{cardName}} ">
+        <div class="card-body">
+          <h5 class="card-title"> <strong> {{cardName}}</strong></h5>
+          <p> {{cardPrice}}</p>
+        </div>
+      </div>
+    </div>
+
+    {{/each}}
+
+    {{/if}}
+
+    {{/each}}
+  </div>
+
+</div>

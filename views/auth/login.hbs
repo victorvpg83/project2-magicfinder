@@ -1,0 +1,42 @@
+<div class="container ">
+  {{!-- <div class="container-login"> --}}
+    <div class="row">
+
+      <div class="col-sm-3">
+
+      </div>
+
+      <div class="col-sm-6 centered-form text-center blackstyleform">
+        <h2>Login</h2>
+        <form action="/auth/login" method="POST" id="form-container">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="JonSnow" class="form-control">
+          </div>
+
+          <br><br>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="Your password" class="form-control">
+          </div>
+          <br>
+          {{#if message }}
+          <div class="error-message">{{ message }}</div>
+          {{/if}}
+
+          <br><br>
+
+          <button type="submit" class="btn btn-success btn-sm">Login</button>
+
+          <p class="account-message">
+            Don't have an account yet?
+            <a href="/auth/signup">Signup</a>
+          </p>
+        </form>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+    </div>
+  {{!-- </div> --}}
+</div>

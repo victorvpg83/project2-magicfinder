@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    {{#each users}}
+    {{#if cardonsale.length}}
+    <div class="col-md-3">
+      <div class="card text-center">
+        {{#each cardonsale}}
+        <img class="card-img-top" src="{{cardImage}}" alt="{{cardName}} ">
+        <div class="card-body">
+          <h5 class="card-title">{{cardName}}</h5>
+          <p class="card-text"><b>Description:</b></p>
+          <p></p> {{cardDesc}}</p>
+          <p class="card-text"><b>Price asked:</b> </p>
+          <p> ${{cardPrice}}</p>
+        </div>
+        {{/each}}
+        <b>User:</b> <span>{{this.username}}</span>
+        <br>
+        <a href="{{this.email}}" target="_blank" class="btn btn-primary btn-sm">contact</a>
+      </div>
+      <div>
+      </div>
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+</div>

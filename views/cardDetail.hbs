@@ -1,0 +1,49 @@
+<h1 class="h1Det h1finder">{{card.name}} </h1>
+
+<div class="container">
+
+  <div id="" class="row">
+
+    <div class="col-md-4">
+
+      <img class="imgDetail" src="{{card.image_uris.png}}" alt="{{name}}">
+
+    </div>
+
+    <div class="col-md-8">
+      <h2 class="h2Det">Details</h2>
+      <hr>
+
+      <p> {{card.oracle_text}} </p>
+      <hr>
+
+      <ul>
+        <li> <strong> Release: </strong>{{card.released_at}} </li>
+        <li> <strong> Rarity: </strong>{{card.rarity}} </li>
+        <li> <strong> Mana Cost: </strong>{{card.mana_cost}} </li>
+        <li> <strong> color identity: </strong>{{card.color_identity}} </li>
+        <li> <strong> Standard: </strong>{{card.legalities.standard}} </li>
+        <li> <strong> Legacy: </strong>{{card.legalities.legacy}} </li>
+      </ul>
+      <hr>
+      <div class="detPrices">
+        <div>
+          <h4 class="priDet"> <strong>Price:</strong> {{card.prices.eur}} <strong> €</strong></h4>
+
+        </div>
+        <div>
+          {{#if user}}
+          <button type="button" class="btn btn-success btn-lg">Buy now</button>
+          {{/if}}
+          <button type="button" class="btn btn-primary btn-lg"> <a class="anchor" href="/">Return</a></button>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</div>

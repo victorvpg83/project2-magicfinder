@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row profRow profM">
+    <div class="col-md-8">
+      <h3>
+        Welcome to your personal page <strong>{{allCards.username}}</strong> 
+      </h3>
+      
+      {{!-- <p>  Here you can edit your profile data, create you personal card collection</p>
+        <h5>Your Contact method</h5> --}}
+        <p> <strong>Email:</strong>  {{allCards.email}}</p>
+
+<p> <strong>Adress:</strong>  {{allCards.adress}}</p>
+
+<p> <strong>city:</strong>  {{allCards.city}}</p>
+
+      <a href="privatepage/edit/{{allCards._id}}" class="btn btn-primary">Edit profile</a>
+    </div>
+    <div class="col-md-4">
+      <img class="profilePhoto" alt="profile image" src="{{allCards.imgPath}}">
+    </div>
+  </div>
+    {{!-- <div class="col-md-12"> --}}
+      <hr>
+      <h3 class="h3cards">Your Cards</h3>
+      <hr>
+  <div class="row paddingB">
+
+
+      {{#each allCards.cards}}
+      {{!-- <div class="row"> --}}
+        <div class="col-md-3">
+
+
+          {{!-- <b>Card id:</b>
+          <p>{{_id}}</p> --}}
+          <br>
+          {{!-- <b>Card Name:</b> --}}
+ 
+          {{!-- <p>{{cardName}}</p> --}}
+       
+          <img class="profilePhoto paddingB" alt="cardImage" src="{{cardImage}}">
+     
+         
+          {{!-- <b>Card Description:</b> --}}
+          {{!-- <p>{{cardDesc}}</p> --}}
+          
+          {{!-- <b>Card Rarity:</b> --}}
+          <p>{{cardRarity}}</p>
+          
+          {{!-- <b>Card Price:</b> --}}
+          <p>{{cardPrice}}</p>
+
+      <div class="centerB">  
+      <a href="privatepage/delete/{{_id}}" class="btn btn-dark">Delete card</a>
+      <a href="privatepage/sell/{{_id}}" class="btn btn-warning">Sell card</a>
+      </div>
+        </div>
+      {{!-- </div> --}}
+      
+
+
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    

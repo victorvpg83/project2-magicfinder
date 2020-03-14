@@ -1,0 +1,90 @@
+<div class="container finderH">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 ">
+      <div id="logo" class="text-center">
+        <h1 class="h1finder">Mtg Card finder</h1>
+      </div>
+
+      <div id="search" class="form-group">
+        <div class="input-group">
+          <input id="theInput" onkeyup="checkInput()" class="form-control" type="text" name="search"
+            placeholder="Search..." required />
+          <span class="input-group-btn">
+            <button id="theButton" class="btn btn-success" type="submit">
+              <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
+            </button>
+            <p>{{ message.message }}</p>
+            {{#if message }}
+            <div class="error-message">{{ message }}</div>
+            {{/if}}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="cardName" class="h1DetSearch"> </h1>
+
+  <div class="container">
+
+    <div id="" class="row paddingB">
+
+      <div class="col-md-3">
+
+        <img id="cardImage" class="imgDetailSearch" src="">
+
+      </div>
+
+      <div class="col-md-8">
+        <h2 class="h2Det">Details</h2>
+        <hr>
+        <p id="cardDesc"></p>
+        <p> {{card.oracle_text}} </p>
+        <hr>
+        <ul>
+          <li>
+            <p id="release"></p>
+          </li>
+          <li>
+            <p id="rarity"></p>
+          </li>
+          <li>
+            <p id="manaCost"></p>
+          </li>
+          <li>
+            <p id="colorId"></p>
+          </li>
+          <li>
+            <p id="legS"></p>
+          </li>
+          <li>
+            <p id="legL"></p>
+          </li>
+        </ul>
+        <hr>
+        <div class="detPrices">
+          <div>
+            <h4 id="price" class="priDet"></h4>
+
+          </div>
+          <div>
+            {{#if user}}
+            <button type="button" class="btn btn-dark btn-lg" id="addcard">Add card</button>
+            {{/if}}
+            <button type="button" class="btn btn-primary btn-lg"> <a class="anchor" href="/cardfinder">Search
+                again</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/javascripts/APIHandler.js"></script>
+<script type="text/javascript" src="/javascripts/script.js"></script>
+</body>
+
+</html>

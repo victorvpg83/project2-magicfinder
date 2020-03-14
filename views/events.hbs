@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 class="h1finder">Estos son nuestros proximos eventos</h2>
+  <div class="row">
+    <div class="col-md-4">
+      {{#each events}}
+      <h4>{{title}}</h4>
+      <p>{{description}}</p>
+      <small>
+        <strong>Lugar: </strong> {{lugar}} |
+        <strong>Teléfono: </strong> {{phone}} |
+        <strong>Fecha: </strong> {{date}}
+      </small>
+      <hr>
+      {{/each}}
+      {{#if user}}
+      <button type="button" class="btn btn-primary">Añadir evento</button>
+      {{/if}}
+    </div>
+    <div class="col-md-8">
+      <figure id="map"></figure>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG88rK2sVwRDbZIJautuIZpNt32kAQpSU"></script>
+      <script src="/javascripts/script.js"></script>
+    </div>
+  </div>
+</div>

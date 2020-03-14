@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+
+    {{!-- {{ message }} --}}
+    <div class="col-sm-6 centered-form">
+      <h2>Editar profile</h2>
+      <form action="/auth/privatepage/edit/{{userData._id}}" method="post">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" class="form-control" value="{{userData.username}}">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" class="form-control" value="{{userData.email}}">
+        </div>
+        <div class="form-group">
+          <label for="email">City</label>
+          <input type="text" name="city" class="form-control" value="{{userData.city}}">
+        </div>
+        <div class="form-group">
+          <label for="city">Adress</label>
+          <input type="text" name="adress" class="form-control" value="{{userData.adress}}">
+        </div>
+        <div class="form-group">
+          
+        </div>
+        <button type="submit">Editar</button>
+      </form>
+    </div>
+  </div>
+</div>

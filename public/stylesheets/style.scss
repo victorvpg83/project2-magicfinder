@@ -1,0 +1,143 @@
+body {
+  // font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "MedievalSharp", cursive;
+  background-image: url("../images/bckmagicethegahtering.jpg");
+  background-size: cover;
+  // height: 100vh -56px;
+  // background: rgb(255, 247, 214);
+  // background: radial-gradient(circle, rgba(255, 247, 214, 1) 0%, rgba(193, 219, 250, 1) 100%);
+}
+a {
+  color: #00b7ff;
+}
+.loginform {
+  padding: 30px 0;
+}
+#map {
+  height: 500px;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#cardCol {
+  padding-bottom: 20px;
+  //background-color: brown;
+}
+.idxTitle {
+  padding: 86px 30px 0 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6em;
+  // margin-top: 5;
+}
+.idxTitleP {
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 2.5em;
+}
+.card-name {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.card-price {
+  text-align: center;
+  background-color: #28a745;
+  padding: 10px;
+}
+.imgDetail {
+  width: 100%;
+}
+.h1Det {
+  text-align: center;
+  padding: 20px;
+}
+.h2Det {
+  padding: 0;
+}
+.priDet {
+  text-align: center;
+  padding-top: 10px;
+}
+.detPrices {
+  display: flex;
+  justify-content: space-around;
+}
+.fiter {
+  display: flex;
+  justify-content: space-evenly;
+}
+.h1DetSearch {
+  text-align: center;
+}
+.imgDetailSearch {
+  width: 100%;
+}
+.searchDiv {
+  margin: 0 auto;
+  align-items: center;
+}
+.anchor:hover {
+  text-decoration: none;
+  color: white;
+}
+.anchor {
+  color: white;
+}
+li {
+  list-style: none;
+}
+.h1finder {
+  font-weight: bold;
+  padding-top: 66px;
+}
+.profilePhoto {
+  width: 100%;
+}
+.h3cards {
+  text-align: center;
+  font-weight: bold;
+}
+.profRow {
+  padding-top: 20px;
+}
+.paddingB {
+  margin-bottom: 20px;
+}
+.centerB {
+  display: flex;
+  justify-content: space-around;
+}
+.navBar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+// .finderH {
+//   min-height: 200px;
+// }
+li {
+  margin-bottom: 0;
+}
+
+.blackstyleform {
+margin-top: 100px;
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border-radius: 10px;
+padding: 20px
+}
+.profM {
+  padding-top: 66px;
+}
+.imdD {
+  width: 100%;
+}
+.borderB {
+  border-bottom: 1px solid grey ;
+  margin-bottom: 20px;
+}
+.icono {
+  width: 100px;
+}
